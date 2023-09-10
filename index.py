@@ -12,8 +12,8 @@ URL = "https://movies-sh4wii.vercel.app"
 bot = Bot(TOKEN)
 
 def welcome(update, context) -> None:
-    update.message.reply_text(f"Hello {update.message.from_user.first_name}, Welcome to SB Movies.\n"
-                              f"🔥 Download Your Favourite Movies For 💯 Free And 🍿 Enjoy it.")
+    update.message.reply_text(f"Hello {update.message.from_user.first_name}, Welcome to SH4WII MEDIA.\n"
+                              f"🔥 Download Your Favourite Movies For 💯 Free And Follow sh4wii on insta 💙.")
     update.message.reply_text("👇 Enter Movie Name 👇")
 
 def find_movie(update, context):

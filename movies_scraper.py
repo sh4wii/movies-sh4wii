@@ -26,18 +26,4 @@ def get_movie(query):
         movie_details["title"] = title
         img = movie_page_link.find("div", {'class': 'mvic-thumb'})['data-bg']
         movie_details["img"] = img
-        links = movie_page_link.find_all("a", {'rel': 'noopener', 'data-wpel-link': 'internal'})
-        final_links = {}
-        for i in links:
-            url = f"https://urlshortx.com/api?api={api_key}&url={i['href']}"
-            response = requests.get(url)
-            link = response.json()
-            final_links[f"{i.text}"] = link['shortenedUrl']
-        movie_details["links"] = final_links
-    return movie_details
-
-requirements.txt
-beautifulsoup4==4.11.1
-python_telegram_bot==13.14
-requests==2.28.1
-Flask==2.2.2
+        links = movie_page_link.find
